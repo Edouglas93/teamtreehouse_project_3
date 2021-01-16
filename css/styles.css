@@ -78,6 +78,11 @@ input::placeholder {
     font-size: 8px;
 }
 
+.bottom_form legend {
+    border-top: 2px solid black;
+    width: 100%;
+}
+
 .bottom_form input {
     font-size: 18px;
     color: rgb(51, 51, 51);
