@@ -70,12 +70,30 @@ legend {
     margin: 5px 0px;
     padding: 8px;
     background-color: rgba(112, 128, 144, 0.2);
-    border: none;
     border-radius: 5%;
+    border: none;
 }
 
 input::placeholder {
     font-size: 8px;
+}
+
+.bottom_form input {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    margin: 5px 10px;
+    background-color: rgba(112, 128, 144, 0.2);
+}
+
+.bottom_form label {
+    margin: 15px 0 7px 0px;
+    font-size: 14px;
+    color:rgba(112, 128, 144);
+}
+
+p {
+    color: rgba(112, 128, 144);
+    font-size: 14px;
 }
 
 textarea {
@@ -104,5 +122,5 @@ button {
     border-radius: 8px;
     margin: 1.5rem auto 2.5rem;
     color: rgb(249, 244, 240);
-    background: linear-gradient(rgb(68, 102, 85), rgb(51, 85, 68) 40%, rgb(17, 51, 34) 80%, rgb(17, 51, 34));
+    background: linear-gradient(rgb(68, 73, 102), rgb(51, 59, 85) 40%, rgb(17, 22, 51) 80%, rgb(17, 18, 51));
 }
