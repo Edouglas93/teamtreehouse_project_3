@@ -37,7 +37,8 @@ header h1 {
     padding: 2px;
 }
 
-fieldset {
+fieldset, 
+input {
     border: none;
     display: flex;
     flex-direction: column;
@@ -72,7 +73,6 @@ textarea {
 
 input::placeholder {
     font-size: 8px;
-    text-align: end;
 }
 
 button {
