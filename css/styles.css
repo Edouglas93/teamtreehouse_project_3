@@ -84,9 +84,18 @@ legend {
     text-align: end;
 }
 
-#phone,
-#address,
-#city,
+#phone::placeholder {
+    font-size: 10px;
+}
+
+#address::placeholder {
+    font-size: 10px;
+}
+
+#city::placeholder {
+    font-size: 10px;
+}
+
 #zip::placeholder {
     font-size: 10px;
 }
@@ -164,5 +173,15 @@ button {
 /*Media Queries*/
 
 @media screen and (min-width: 768px) {
-  
+    .section_1 {
+        margin-bottom: 50px;
+    }
+
+    .top_form label {
+        display: inline-block;
+    }
+
+    .top_form input {
+        display: inline-block;
+    }
 }
