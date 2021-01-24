@@ -62,7 +62,8 @@ legend {
     color:rgba(112, 128, 144);
 }
 
-.top_form input {
+.top_form input,
+#user_state {
     display: block;
     width: 100%;
     font-size: 18px;
@@ -73,6 +74,13 @@ legend {
     border-radius: 5%;
     border: none;
 }
+
+input:focus-visible {
+    outline: 4px solid rgba(0, 0, 255);
+    background:  rgb(204, 227, 250);;
+    transition: .5s;
+}
+
 
 #name::placeholder {
     font-size: 8px;
@@ -96,11 +104,21 @@ legend {
     font-size: 10px;
 }
 
+#zip {
+    width: 85%;
+}
+
 #zip::placeholder {
     font-size: 10px;
 }
 
-input:focus-visible {
+#user_state {
+    font-size: 10px;
+    color: rgba(112, 128, 144);
+    width: 105%;
+}
+
+select:focus-visible {
     outline: 4px solid rgba(0, 0, 255);
     background:  rgb(204, 227, 250);;
     transition: .5s;
@@ -198,8 +216,18 @@ button {
 
     .top_form input {
         position: absolute;
-        right: 258px;
-        width: 33%;
+        right: 186px;
+        max-width: 33%;
     }
 
+    #user_state {
+        position: absolute;
+        right: 186px;
+        max-width: 35%;   
+    }
+
+    #zip {
+        max-width: 20%;
+        margin-right: 100px;
+    }
 }
