@@ -1,5 +1,5 @@
 body {
-    font-family: Merriweather, sans-serif;
+    font-family: "Merriweather", sans-serif;
 }
 
 header {
@@ -7,10 +7,13 @@ header {
     padding: 20px;
 }
 
+.text_center {
+    text-align: center;
+}
+
 header h1 {
     color: white;
     font-size: 1em;
-    text-align: center;
 }
 
 .container {
@@ -19,14 +22,16 @@ header h1 {
     padding: 5%;
 }
 
-.section_1 {
-    text-align: center;
+.section_1 p,
+.top_form label,
+.bottom_form label,
+p {
+    font-size: 14px;
+    color:rgba(112, 128, 144);
 }
 
 .section_1 p {
     margin-top: -11px;
-    color: rgb(112, 128, 144);
-    font-size: 14px;
 }
 
 .border {
@@ -58,70 +63,56 @@ legend {
 .top_form label {
     display: block;
     margin: 15px 0 7px 0px;
-    font-size: 14px;
-    color:rgba(112, 128, 144);
 }
 
 .top_form input,
 #user_state {
+    margin: 5px 0px;
+    padding: 8px;
+}
+
+.top_form input,
+#user_state,
+textarea {
     display: block;
     width: 100%;
     font-size: 18px;
     color: rgb(51, 51, 51);
-    margin: 5px 0px;
-    padding: 8px;
     background-color: rgba(112, 128, 144, 0.2);
     border-radius: 5%;
     border: none;
 }
 
-input:focus-visible {
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
     outline: 4px solid rgba(0, 0, 255);
     background:  rgb(204, 227, 250);;
     transition: .5s;
 }
 
 
-#name::placeholder {
+#name::placeholder,
+#email::placeholder {
     font-size: 8px;
     text-align: end;
 }   
 
-#email::placeholder {
-    font-size: 8px;
-    text-align: end;
-}
-
-#phone::placeholder {
-    font-size: 10px;
-}
-
-#address::placeholder {
-    font-size: 10px;
-}
-
-#city::placeholder {
+#phone::placeholder,
+#address::placeholder,
+#city::placeholder,
+#zip::placeholder,
+#user_state {
     font-size: 10px;
 }
 
 #zip {
-    width: 85%;
-}
-
-#zip::placeholder {
-    font-size: 10px;
+    width: 35%;
 }
 
 #user_state {
-    font-size: 10px;
     color: rgba(112, 128, 144);
     width: 105%;
-}
-
-select:focus-visible {
-    outline: 4px solid rgba(0, 0, 255);
-    background:  rgb(204, 227, 250);;
-    transition: .5s;
 }
 
 .bottom_form legend {
@@ -136,45 +127,17 @@ select:focus-visible {
     background-color: rgba(112, 128, 144, 0.2);
 }
 
-.bottom_form label {
-    font-size: 14px;
-    color:rgba(112, 128, 144);
-}
-
-p {
-    color: rgba(112, 128, 144);
-    font-size: 14px;
-}
-
 textarea {
-    display: block;
-    width: 100%;
-    font-size: 18px;
-    color: rgb(51, 51, 51);
     margin-top: 15px;
     padding: 10px 10px 40px;
-    background-color: rgba(112, 128, 144, 0.2);
-    border: none;
-    border-radius: 5%;
-}
-
-textarea:focus-visible {
-    outline: 4px solid rgba(0, 0, 255);
-    background:  rgb(204, 227, 250);
-    transition: .5s;
 }
 
 button {
     width: 100%;
-    max-width: 430px;
     font-size: 18px;
-    display: block;
     cursor: pointer;
     padding: 12px 0px;
-    border-width: initial;
     border-style: none;
-    border-color: initial;
-    border-image: initial;
     border-radius: 8px;
     margin: 1.5rem auto .5rem;
     color: rgb(249, 244, 240);
@@ -184,7 +147,6 @@ button {
 .copyright {
     font-size: 12px;
     font-style: italic;
-    text-align: center;
     color: rgba(112, 128, 144) ;
 }
 
@@ -193,8 +155,21 @@ button {
 @media screen and (min-width: 768px) {
     
     header {
-        width: 56%;
-        margin: auto;
+       height: 15px;
+    }
+
+    h1 {
+        margin: 1px 0;
+    }
+
+    .section_1 p,
+    .copyright {
+        font-size: 10px;
+    }
+    
+    legend,
+    button {
+        font-size: 14px;
     }
 
     .container {
@@ -208,26 +183,28 @@ button {
 
     .top_form_container {
         display: flex;
+        padding: 6px;
+    }
+
+    .top_form label,
+    p,
+    .bottom_form label {
+     font-size: 12px;
     }
 
     .top_form label {
-        display: inline-block;
+        flex-basis: 33%;
     }
 
     .top_form input {
-        position: absolute;
-        right: 186px;
-        max-width: 33%;
+        flex-basis: 67%;
     }
 
     #user_state {
-        position: absolute;
-        right: 186px;
         max-width: 35%;   
     }
 
     #zip {
         max-width: 20%;
-        margin-right: 100px;
     }
 }
