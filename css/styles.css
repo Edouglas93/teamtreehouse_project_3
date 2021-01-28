@@ -66,13 +66,13 @@ legend {
 }
 
 .top_form input,
-#user_state {
+#state {
     margin: 5px 0px;
     padding: 8px;
 }
 
 .top_form input,
-#user_state,
+#state,
 textarea {
     display: block;
     width: 100%;
@@ -102,15 +102,15 @@ textarea:focus-visible {
 #address::placeholder,
 #city::placeholder,
 #zip::placeholder,
-#user_state {
+#state {
     font-size: 10px;
 }
 
 #zip {
-    width: 35%;
+    width: 50%;
 }
 
-#user_state {
+#state {
     color: rgba(112, 128, 144);
     width: 105%;
 }
@@ -200,11 +200,16 @@ button {
         flex-basis: 67%;
     }
 
-    #user_state {
-        max-width: 35%;   
+    #state {
+        width: 72%;
     }
 
     #zip {
-        max-width: 20%;
+        max-width: 25%;
+        flex-basis: 68%;
+    }
+
+    #label_zip {
+        flex-basis: 32%;
     }
 }
